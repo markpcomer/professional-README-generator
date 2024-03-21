@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { writeFile } = require('fs').promises;
+const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -13,12 +14,12 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Please briefly describe your project.",
+        message: "Briefly describe your project.",
     },
     {
         type: "input",
         name: "installation",
-        message: "What are your project's installation instructions?",
+        message: "What is the installation process?",
     },
     {
         type: "input",
@@ -36,15 +37,16 @@ const questions = [
         message: "Enter any testing instructions.",
     },
     {
-        type: "list",
+        type: "checkbox",
         name: "license",
         message: "Please choose a license",
         choices: [
-            "Microsoft Public License",
-            "MIT",
+            "MIT License",
+            "GNU General Public License (GPL)",
+            "Apache License 2.0",
             "Mozilla Public License 2.0",
             "Open Software License",
-            "The Unilicense",
+            "The Unlicense",
         ],
     },
     {
@@ -57,11 +59,12 @@ const questions = [
         name: "email",
         message: "What is your email?",
     },
-    {   type: "list",
+    {   type: "checkbox",
         name: "contact",
         message: "How else would you like to be contacted?",
         choices: [
             "phone",
+            "text",
             "slack",
             "snail mail"
         ],
@@ -70,13 +73,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    inquirer.prompt(questions)
+}
 
 // TODO: Create a function to initialize app
 function init() {}
 
 // Function call to initialize app
 init();
+
+
 
 /*
 
