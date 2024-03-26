@@ -30,33 +30,71 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 
 const renderLicenseSection = license => license ? `Licensed by ${license}` : "";
-/*
-function renderLicenseSection(license) {
-    if (!license) {
-        return "";
-    } else {
-        return `Licensed by ${license}`;
-    }
-}
-*/
+
 /*
 Description, Installation, Usage, Contributing, Testing
-
 */
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
     ${renderLicenseBadge(data.license)}
-    ${data.description}
     ${data.renderLicenseBadge}
 
     ## Contents 
 
-    1.  [About](#about)
-    2.  [Description](#description)
+    1.  [Description](#description)
+    2.  [Installation](#installation)
     3.  [License](#license)
-    4.  [Contribution](#co)
+    4.  [Usage](#usage)
+    5.  [Contributing](#contributing)
+    6.  [Testing](#testing)
+    7.  [Questions](#questions)
+
+    ___
+
+    ## 1.   Description
+
+        ${data.description}
+
+    ___
+
+    ## 2.   Installation
+
+        ${data.installation}
+
+    ___
+
+    ## 3.   License
+
+        ${renderLicenseSection(license)}
+        ${renderLicenseLink(license)}
+
+    ___
+
+    ## 4.   Usage
+
+        ${data.usage}
+
+    ___
+
+    ## 5.   Contributing
+
+        ${data.contributing}
+
+    ___
+
+    ## 6.   Testing 
+
+        ${data.testing}
+
+    ___
+
+    ## 7.   Questions
+
+        ${data.github}
+
+        "For additional questions, please reach me at ${data.email}.
 `;
 }
 

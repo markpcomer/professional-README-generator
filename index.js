@@ -51,7 +51,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "username",
+        name: "github",
         message: "What is your GitHub username?",
     },
     {
@@ -60,7 +60,7 @@ const questions = [
         message: "What is your email?",
     },
     {   type: "checkbox",
-        name: "contact",
+        name: "questions",
         message: "How else would you like to be contacted?",
         choices: [
             "phone",
