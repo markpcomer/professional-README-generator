@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 
 const renderLicenseBadge = license => license ? 
-    `[![License: GPL v3](https://img.shields.io/badge/License-${ license }-blue)]` : " ";
+    `[![License:](https://img.shields.io/badge/License-${ license }-blue)]` : " ";
 
 
 // TODO: Create a function that returns the license link
@@ -39,14 +39,24 @@ function renderLicenseSection(license) {
     }
 }
 */
+/*
+Description, Installation, Usage, Contributing, Testing
+
+*/
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
-    ## Description
-
+    ${renderLicenseBadge(data.license)}
     ${data.description}
+    ${data.renderLicenseBadge}
+
+    ## Contents 
+
+    1.  [About](#about)
+    2.  [Description](#description)
+    3.  [License](#license)
+    4.  [Contribution](#co)
 `;
 }
 
