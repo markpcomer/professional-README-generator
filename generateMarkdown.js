@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 
 const renderLicenseBadge = license => license ? 
-    `[![License:](https://img.shields.io/badge/License-${ license }-blue)]` : " ";
+    `[![License:](https://img.shields.io/badge/license-${ license }-blue)]` : " ";
 
 
 // TODO: Create a function that returns the license link
@@ -31,17 +31,13 @@ function renderLicenseLink(license) {
 
 const renderLicenseSection = license => license ? `Licensed by ${license}` : "";
 
-/*
-Description, Installation, Usage, Contributing, Testing
-*/
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return ` ${data.title}
     ${renderLicenseBadge(data.license)}
-    ${data.renderLicenseBadge}
 
-    ## Contents 
+    # Contents 
 
     1.  [Description](#description)
     2.  [Installation](#installation)
@@ -54,7 +50,6 @@ function generateMarkdown(data) {
     ___
 
     ## 1.   Description
-
         ${data.description}
 
     ___
@@ -67,8 +62,8 @@ function generateMarkdown(data) {
 
     ## 3.   License
 
-        ${renderLicenseSection(license)}
-        ${renderLicenseLink(license)}
+        ${renderLicenseSection(data.license)}
+        ${renderLicenseLink(data.license)}
 
     ___
 
@@ -86,15 +81,15 @@ function generateMarkdown(data) {
 
     ## 6.   Testing 
 
-        ${data.testing}
+        ${data.tests}
 
     ___
 
     ## 7.   Questions
 
-        ${data.github}
+        My GitHub is at https://github.com/${data.github}.
 
-        "For additional questions, please reach me at ${data.email}.
+        For additional questions, please reach me at ${data.email}.
 `;
 }
 
