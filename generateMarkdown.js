@@ -5,7 +5,7 @@
 //    `![License:](https://img.shields.io/badge/license-${ license }-blue).svg` : " ";
 function renderLicenseBadge(license) {
     if (license !== "None") {
-      return `![Github License](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
+      return `![Github License](https://img.shields.io/badge/license-${license}-yellowgreen)`
     }
     return ""
   };
