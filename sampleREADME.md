@@ -1,5 +1,5 @@
- sample
-    ![Github License](https://img.shields.io/badge/license-Apache License 2.0-yellowgreen)
+ Professional README generator
+    ![License:](https://img.shields.io/badge/license-Apache License 2.0-blue).svg
 
     # Contents 
 
@@ -14,13 +14,14 @@
     ___
 
     ## 1.   Description
-        sample
+    
+        This is a test of the generator
 
     ___
 
     ## 2.   Installation
 
-        sample
+        Please contact the author
 
     ___
 
@@ -33,24 +34,24 @@
 
     ## 4.   Usage
 
-        sample
+        Please contact the author
 
     ___
 
     ## 5.   Contributing
 
-        sample
+        Please contact the author
 
     ___
 
     ## 6.   Testing 
 
-        sample
+        Please contact the author
 
     ___
 
     ## 7.   Questions
 
-        My GitHub is at https://github.com/sample.
+        My GitHub is at https://github.com/markpcomer.
 
-        For additional questions, please reach me at sample.
+        For additional questions, please reach me at markpcomer@gmail.com.
