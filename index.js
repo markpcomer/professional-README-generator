@@ -41,12 +41,12 @@ const questions = [
         name: "license",
         message: "Please choose a license",
         choices: [
-            "MIT License",
-            "GNU General Public License (GPL)",
-            "Apache License 2.0",
-            "Mozilla Public License 2.0",
-            "Open Software License",
-            "The Unlicense",
+            "MIT_License",
+            "GNU_General_Public_License_(GPL)",
+            "Apache_License_2.0",
+            "Mozilla_Public_License_2.0",
+            "Open_Software_License",
+            "The_Unlicense",
         ],
     },
     {

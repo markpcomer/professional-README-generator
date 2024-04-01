@@ -2,12 +2,13 @@
 // If there is no license, return an empty string
 
 const renderLicenseBadge = license => license ? 
-    `![License:](https://img.shields.io/badge/license-${ license }-blue).svg` : " ";
+    `![License:](https://img.shields.io/badge/license-${ license }-blue)` : " ";
 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+    console.log(license);
     if (!license) {
         return "";
     } else if (license === "MIT License") {
@@ -34,59 +35,60 @@ const renderLicenseSection = license => license ? `Licensed by ${license}` : "";
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return ` ${data.title}
-    ${renderLicenseBadge(data.license)}
+  return ` 
+# ${data.title}
+# ${renderLicenseBadge(data.license)}
 
-    # Contents 
+# Contents 
 
-    1.  [Description](#description)
-    2.  [Installation](#installation)
-    3.  [License](#license)
-    4.  [Usage](#usage)
-    5.  [Contributing](#contributing)
-    6.  [Testing](#testing)
-    7.  [Questions](#questions)
+1.  [Description](#description)
+2.  [Installation](#installation)
+3.  [License](#license)
+4.  [Usage](#usage)
+5.  [Contributing](#contributing)
+6.  [Testing](#testing)
+7.  [Questions](#questions)
 
-    ___
+___
 
-    ## 1.   Description
+## 1.   Description
     
         ${data.description}
 
-    ___
+___
 
-    ## 2.   Installation
+## 2.   Installation
 
         ${data.installation}
 
-    ___
+___
 
-    ## 3.   License
+## 3.   License
 
         ${renderLicenseSection(data.license)}
         ${renderLicenseLink(data.license)}
 
-    ___
+___
 
-    ## 4.   Usage
+## 4.   Usage
 
         ${data.usage}
 
-    ___
+___
 
-    ## 5.   Contributing
+## 5.   Contributing
 
         ${data.contributing}
 
-    ___
+___
 
-    ## 6.   Testing 
+## 6.   Testing 
 
         ${data.tests}
 
-    ___
+___
 
-    ## 7.   Questions
+## 7.   Questions
 
         My GitHub is at https://github.com/${data.github}.
 
