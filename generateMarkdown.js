@@ -47,7 +47,7 @@ function generateMarkdown(data) {
 4.  [Usage](#usage)
 5.  [Contributing](#contributing)
 6.  [Testing](#testing)
-7. [Questions](#questions)
+* 7. [Questions](#questions)
 
 ___
 
@@ -88,11 +88,12 @@ ___
 
 ___
 
-## 7. Questions
+## 7. [Questions](#table-of-contents)
 
-        My GitHub is at https://github.com/${data.github}.
 
-        For additional questions, please reach me at ${data.email}.
+        My GitHub is at [GitHub] (https://github.com/${data.github})
+
+        For more questions, please reach me at [Email : ${data.email}](mailto:${data.email})
 `;
 }
 
