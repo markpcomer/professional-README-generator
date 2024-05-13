@@ -41,59 +41,58 @@ function generateMarkdown(data) {
 
 ## Table of Contents 
 
-1. [Description](#description)
-2.  [Installation](#installation)
-3.  [License](#license)
-4.  [Usage](#usage)
-5.  [Contributing](#contributing)
-6.  [Testing](#testing)
-* 7. [Questions](#questions)
+* [Description](#description)
+* [Installation](#installation)
+* [License](#license)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Testing](#testing)
+* [Questions](#questions)
 
 ___
 
-## 1. Description
-    
-        ${data.description}
+## Description
+${data.description}
 
 ___
 
-## 2.   Installation
+## Installation
 
         ${data.installation}
 
 ___
 
-## 3.   License
+## License
 
         ${renderLicenseSection(data.license)}
         ${renderLicenseLink(data.license)}
 
 ___
 
-## 4.   Usage
+## Usage
 
         ${data.usage}
 
 ___
 
-## 5.   Contributing
+## Contributing
 
         ${data.contributing}
 
 ___
 
-## 6.   Testing 
+## Testing 
 
         ${data.tests}
 
 ___
 
-## 7. [Questions](#table-of-contents)
+## Questions](#table-of-contents)
 
 
-        My GitHub is at [GitHub] (https://github.com/${data.github})
+        My GitHub is at [GitHub](https://github.com/${data.github})
 
-        For more questions, please reach me at [Email : ${data.email}](mailto:${data.email})
+        For additional questions, please reach me at [Email : ${data.email}](mailto:${data.email})
 `;
 }
 
