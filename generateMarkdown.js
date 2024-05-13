@@ -57,42 +57,34 @@ ${data.description}
 ___
 
 ## Installation
-
-        ${data.installation}
+${data.installation}
 
 ___
 
 ## License
-
-        ${renderLicenseSection(data.license)}
-        ${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 
 ___
 
 ## Usage
-
-        ${data.usage}
+ ${data.usage}
 
 ___
 
 ## Contributing
-
-        ${data.contributing}
+${data.contributing}
 
 ___
 
 ## Testing 
-
-        ${data.tests}
-
-___
-
-## Questions](#table-of-contents)
+${data.tests}
 
 
-        My GitHub is at [GitHub](https://github.com/${data.github})
 
-        For additional questions, please reach me at [Email : ${data.email}](mailto:${data.email})
+## [Questions](#table-of-contents)
+My GitHub is at (https://github.com/${data.github})
+For additional questions, please reach me at ${data.email}.
 `;
 }
 
