@@ -1,28 +1,28 @@
  
-# sample
+# The name is Django
 # ![License:](https://img.shields.io/badge/license-Apache_License_2.0-blue)
 
-# Contents 
+## Table of Contents 
 
-1.  [Description](#description)
+1. [Description](#description)
 2.  [Installation](#installation)
 3.  [License](#license)
 4.  [Usage](#usage)
 5.  [Contributing](#contributing)
 6.  [Testing](#testing)
-7.  [Questions](#questions)
+7. [Questions](#questions)
 
 ___
 
-## 1.   Description
+## 1. Description
     
-        sample
+        The
 
 ___
 
 ## 2.   Installation
 
-        sample
+        D
 
 ___
 
@@ -35,24 +35,24 @@ ___
 
 ## 4.   Usage
 
-        sample
+        is 
 
 ___
 
 ## 5.   Contributing
 
-        sample
+        silent.
 
 ___
 
 ## 6.   Testing 
 
-        sample
+        Hey there lil troublemaker.
 
 ___
 
-## 7.   Questions
+## 7. Questions
 
-        My GitHub is at https://github.com/sample.
+        My GitHub is at https://github.com/markpcomer.
 
-        For additional questions, please reach me at sample.
+        For additional questions, please reach me at markpcomer@gmail.com.

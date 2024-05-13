@@ -39,19 +39,19 @@ function generateMarkdown(data) {
 # ${data.title}
 # ${renderLicenseBadge(data.license)}
 
-# Contents 
+## Table of Contents 
 
-1.  [Description](#description)
+1. [Description](#description)
 2.  [Installation](#installation)
 3.  [License](#license)
 4.  [Usage](#usage)
 5.  [Contributing](#contributing)
 6.  [Testing](#testing)
-7.  [Questions](#questions)
+7. [Questions](#questions)
 
 ___
 
-## 1.   Description
+## 1. Description
     
         ${data.description}
 
@@ -88,7 +88,7 @@ ___
 
 ___
 
-## 7.   Questions
+## 7. Questions
 
         My GitHub is at https://github.com/${data.github}.
 
