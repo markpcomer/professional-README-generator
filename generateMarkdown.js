@@ -51,33 +51,33 @@ function generateMarkdown(data) {
 
 ___
 
-## Description
+## [Description](#table-of-contents)
 ${data.description}
 
 ___
 
-## Installation
+## [Installation](#table-of-contents)
 ${data.installation}
 
 ___
 
-## License
+## [License](#table-of-contents)
 ${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 
 ___
 
-## Usage
+## [Usage](#table-of-contents)
  ${data.usage}
 
 ___
 
-## Contributing
+## [Contributing](#table-of-contents)
 ${data.contributing}
 
 ___
 
-## Testing 
+## [Testing](#table-of-contents)
 ${data.tests}
 
 
