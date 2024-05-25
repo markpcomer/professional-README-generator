@@ -1,5 +1,7 @@
 # Professional-README-Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## Table of Contents
 
 * [Description](#description)
@@ -12,7 +14,7 @@
 * [Video-Walkthrough](#video-walkthrough)
 
 
-## Project Description
+## Description
 This command-line application is designed for web development professionals looking to quickly and efficiently create README files for their GitHub repositories.
 
 ## Installation

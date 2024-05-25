@@ -1,5 +1,6 @@
  
-# terst
+# Brooklyn
+
 # ![License:](https://img.shields.io/badge/License-MIT_License-blue)
 
 ## Table of Contents 
@@ -14,37 +15,38 @@
 
 ___
 
-## [Description](#table-of-contents)
-
-
-___
-
-## [Installation](#table-of-contents)
-terst
+## [Description](#description)
+Brooklyn
 
 ___
 
-## [License](#table-of-contents)
-Licensed by MIT_License
-undefined
+## [Installation](#installation)
+Brooklyn
 
 ___
 
-## [Usage](#table-of-contents)
- terst
+## [License](#license)
+# ![License:](https://img.shields.io/badge/License-MIT_License-blue)     
+Licensed by MIT_License:    
+https://opensource.org/license/mit    
 
 ___
 
-## [Contributing](#table-of-contents)
-terst
+## [Usage](#usage)
+ Brooklyn
 
 ___
 
-## [Testing](#table-of-contents)
-terst
+## [Contributing](#contributing)
+Brooklyn
+
+___
+
+## [Testing](#testing)
+Brooklyn
 
 
 
-## [Questions](#table-of-contents)
-My GitHub is at (https://github.com/terst)
-For additional questions, please reach me at terst.
+## [Questions](#questions)
+My GitHub is at (https://github.com/Brooklyn)
+For additional questions, please reach me at Brooklyn@gmail.com.

@@ -8,17 +8,17 @@ function renderLicenseLink(license) {
     console.log(license);
     if (!license) {
         return "";
-    } else if (license === "MIT License") {
+    } else if (license == "MIT_License") {
         return "https://opensource.org/license/mit";
-    } else if (license === "GNU General Public License (GPL)") {
+    } else if (license == "GNU_General_Public_License_(GPL)") {
         return "https://www.gnu.org/licenses/gpl-3.0.en.html";
-    } else if (license ==="Apache License 2.0") {
+    } else if (license =="Apache_License_2.0") {
         return "https://www.apache.org/licenses/LICENSE-2.0";
-    } else if (license === "Mozilla Public License 2.0") {
+    } else if (license == "Mozilla_Public_License_2.0") {
         return "https://www.mozilla.org/en-US/MPL/2.0/";
-    } else if (license === "Open Software License") {
+    } else if (license == "Open_Software_License") {
         return "https://opensource.org/license/osl-3-0-php";
-    } else if (license === "The Unlicense") {
+    } else if (license == "The_Unlicense") {
         return "https://choosealicense.com/licenses/unlicense/";
     };
 }
@@ -27,10 +27,11 @@ function renderLicenseLink(license) {
 const renderLicenseSection = license => license ? `Licensed by ${license}` : "";
 
 
-//  Generates the markdown for README
+//  Generates the markdown for README 
 function generateMarkdown(data) {
   return ` 
 # ${data.title}
+
 # ${renderLicenseBadge(data.license)}
 
 ## Table of Contents 
@@ -45,38 +46,39 @@ function generateMarkdown(data) {
 
 ___
 
-## [Description](#table-of-contents)
+## [Description](#description)
 ${data.description}
 
 ___
 
-## [Installation](#table-of-contents)
+## [Installation](#installation)
 ${data.installation}
 
 ___
 
-## [License](#table-of-contents)
-${renderLicenseSection(data.license)}
-${renderLicenseLink(data.license)}
+## [License](#license)
+# ${renderLicenseBadge(data.license)}     
+${renderLicenseSection(data.license)}:    
+${renderLicenseLink(data.license)}    
 
 ___
 
-## [Usage](#table-of-contents)
+## [Usage](#usage)
  ${data.usage}
 
 ___
 
-## [Contributing](#table-of-contents)
+## [Contributing](#contributing)
 ${data.contributing}
 
 ___
 
-## [Testing](#table-of-contents)
+## [Testing](#testing)
 ${data.tests}
 
 
 
-## [Questions](#table-of-contents)
+## [Questions](#questions)
 My GitHub is at (https://github.com/${data.github})
 For additional questions, please reach me at ${data.email}.
 `;

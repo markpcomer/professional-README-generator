@@ -1,4 +1,4 @@
-
+// Importing required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./generateMarkdown");
@@ -66,35 +66,22 @@ const questions = [
 // Writes the README app
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
-    err ? console.log(err) : console.log("README.md generated")
+        // Error handling: Log error if encountered, otherwise log success message
+        err ? console.log(err) : console.log("README.md generated")
     });
 }
 
 
 // This function initializes the app.
 function init() {
+    // Prompting the user with questions
     inquirer.prompt(questions)
         .then((data) => 
+        // Writing the generated README content to a file
             writeToFile('sampleREADME.md', generateMarkdown(data)))
+            // Error handling if promise is rejected
             .catch((err) => console.log(err));
 }
-
-/*
-function init() {
-    inquirer.prompt(questions)
-        .then((data) => {
-            return generateMarkdown(data);  
-        })
-        .then((newReadMeFile) => {
-            writeToFile('README.md', newReadMeFile);
-        })
-        .catch(err => {
-            console.log(err);
-        })
-}
-*/
-
-
 
 // Function call to initialize app
 init();
